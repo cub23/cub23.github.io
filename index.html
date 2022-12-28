@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cub23</title>
+
+
+    <link rel="stylesheet" type="text/css" href="css/normalized.css" />
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/hamburger.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <!-- hambergur-->
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div class="menu" id="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="#p1">About</a></li>
+                        <li><a href="#p2">Menu</a></li>
+                        <li><a href="#p3">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="fullpage">
+        <!-- 全圖 -->
+        <div class="section section-img" id="">
+            <div class="logo"></div>
+            <div id="scroll-down-animation">
+                <span class="mouse">
+                    <span class="move"></span>
+                </span>
+                <h2>Scroll down</h2>
+            </div>
+        </div>
+        <!-- 左圖右文 -->
+        <div class="section section-imgtext" id="" data-anchor="p1">
+            <div class="section-imgtext--img">
+                <img src="images/conservatory.png" alt="">
+            </div>
+            <div class="section-imgtext--text">
+                <div>
+                    <h2>ABOUT</h2>
+                    <p>餐廳介紹</p>
+                </div>
+            </div>
+        </div>
+        <!-- 右圖左文 -->
+        <div class="section section-imgtext" id="" data-anchor="p2">
+            <div class="section-imgtext--text">
+                <div>
+                    <h2>CHEF</h2>
+                    <p>廚師介紹</p>
+                </div>
+            </div>
+            <div class="section-imgtext--img">
+                <img src="images/chef1.png" alt="">
+            </div>
+        </div>
+        <!-- 左圖右文 -->
+        <div class="section section-imgtext" id="" data-anchor="p3">
+            <div class="section-imgtext--img">
+                <img src="images/chef2.png" alt="">
+            </div>
+            <div class="section-imgtext--text">
+                <div>
+                    <h2>CHEF</h2>
+                    <p>廚師介紹</p>
+                </div>
+            </div>
+        </div>
+        <!-- 右圖左文 -->
+        <div class="section section-imgtext" id="" data-anchor="p4">
+            <div class="section-imgtext--text">
+                <div>
+                    <h2>MENU</h2>
+                    <p>菜單</p>
+                </div>
+            </div>
+            <div class="section-imgtext--img">
+                <img src="images/corn.png" alt="">
+            </div>
+        </div>
+        <!-- 文 -->
+        <div class="section section-text" data-anchor="p5">
+            <h2>活動</h2>
+            <p>活動內容</p>
+
+            <footer>Website created by <a href="https://jeanzulin.github.io/" target="_blank">Jean Lin</a> © 2022
+            </footer>
+            <div id="goTop"><span>TOP</span></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            new fullpage('#fullpage', {
+                //options here
+                licenseKey: 'gplv3-license',
+                anchors: ['p0', 'p1', 'p2', 'p3', 'p4', 'p5'],
+                autoScrolling: true,
+                scrollHorizontally: true,
+                navigation: true,
+                navigationPosition: 'right',
+                showActiveTooltip: false,
+                slidesNavigation: false,
+                slidesNavPosition: 'bottom',
+            });
+            $("#menu li").click(function () {
+                $('.toggler').click();
+            });
+
+            $("#goTop").click(function () {
+                fullpage_api.moveTo('p0', 1);
+            });
+                        
+        });
+
+    </script>
+</body>
+
+</html>
