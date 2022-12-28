@@ -25,9 +25,14 @@
             <div>
                 <div>
                     <ul>
+                        <li><a href="#p0">Home</a></li>
                         <li><a href="#p1">About</a></li>
-                        <li><a href="#p2">Menu</a></li>
-                        <li><a href="#p3">Contact</a></li>
+                        <li><a href="#p2">Chef</a></li>
+                        <li><a href="#p3">Chef</a></li>
+                        <li><a href="#p4">Menu</a></li>
+                        <li><a href="#p5">Event</a></li>
+                        <li><a href="#p6">Reservation</a></li>
+                        <li><a href="#p7">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,7 +41,7 @@
 
     <div id="fullpage">
         <!-- 全圖 -->
-        <div class="section section-img" id="">
+        <div class="section section-img" id="" data-anchor="p0">
             <div class="logo"></div>
             <div id="scroll-down-animation">
                 <span class="mouse">
@@ -62,7 +67,7 @@
             <div class="section-imgtext--text">
                 <div>
                     <h2>CHEF</h2>
-                    <p>廚師介紹</p>
+                    <p>主廚介紹</p>
                 </div>
             </div>
             <div class="section-imgtext--img">
@@ -77,7 +82,7 @@
             <div class="section-imgtext--text">
                 <div>
                     <h2>CHEF</h2>
-                    <p>廚師介紹</p>
+                    <p>主廚介紹</p>
                 </div>
             </div>
         </div>
@@ -95,10 +100,23 @@
         </div>
         <!-- 文 -->
         <div class="section section-text" data-anchor="p5">
-            <h2>活動</h2>
-            <p>活動內容</p>
+            <h2>Event</h2>
+            <p>活動內容：四月開幕</p>
+        </div>
+        <!-- 文 -->
+        <div class="section section-text" data-anchor="p6">
+            <h2>Reservation</h2>
+            <p>預約</p>
+        </div>
+        <!-- 文 -->
+        <div class="section section-text" data-anchor="p7">
+            <h2>Contact</h2>
+            <p>聯絡我們</p>
 
-            <footer>Website created by <a href="https://jeanzulin.github.io/" target="_blank">Jean Lin</a> © 2022
+            <footer>Website created by
+                <a href="https://jeanzulin.github.io/" target="_blank">
+                    Jean Lin
+                </a> © 2022
             </footer>
             <div id="goTop"><span>TOP</span></div>
         </div>
@@ -111,7 +129,7 @@
             new fullpage('#fullpage', {
                 //options here
                 licenseKey: 'gplv3-license',
-                anchors: ['p0', 'p1', 'p2', 'p3', 'p4', 'p5'],
+                anchors: ['p0', 'p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7'],
                 autoScrolling: true,
                 scrollHorizontally: true,
                 navigation: true,

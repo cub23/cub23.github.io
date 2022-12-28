@@ -24,7 +24,6 @@
   width: 60px;
   height: 60px;
   padding: 1rem;
-  background: ;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,7 +103,7 @@
 }
 
 .menu-wrap .menu > div {
-  background: rgba(0, 0, 0, 0.488);
+  background: rgba(0, 0, 0, 0.6);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -148,7 +147,6 @@
 }
 
 .showcase {
-  background-color: ;
   color: white;
   height: 100vh;
   position: relative;
@@ -185,7 +183,6 @@
 .btn {
   display: inline-block;
   border: none;
-  background-color: ;
   color: wheat;
   padding: 0.75rem 1.5rem;
   margin-top: 1rem;
