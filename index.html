@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cub23</title>
 
-
+    <link rel="stylesheet" type="text/css" href="font/all.min.css" />
     <link rel="stylesheet" type="text/css" href="css/normalized.css" />
     <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="css/hamburger.css" />
@@ -15,30 +15,44 @@
 </head>
 
 <body>
-    <!-- hambergur-->
-    <div class="menu-wrap">
-        <input type="checkbox" class="toggler" />
-        <div class="hamburger">
-            <div></div>
+    <nav>
+        <!-- social media-->
+        <!-- suggest changing the link -->
+        <div class="scm">
+            <a href="https://www.instagram.com/cubrestaurant/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100088719650128&mibextid=LQQJ4d" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
         </div>
-        <div class="menu" id="menu">
-            <div>
+        <!-- hambergur-->
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler" />
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu" id="menu">
                 <div>
-                    <ul>
-                        <li><a href="#p0">Home</a></li>
-                        <li><a href="#p1">About</a></li>
-                        <li><a href="#p2">Chef</a></li>
-                        <li><a href="#p3">Chef</a></li>
-                        <li><a href="#p4">Menu</a></li>
-                        <li><a href="#p5">Event</a></li>
-                        <li><a href="#p6">Reservation</a></li>
-                        <li><a href="#p7">Contact</a></li>
-                    </ul>
+                    <div>
+                        <ul>
+                            <li><a href="#p0">Home</a></li>
+                            <li><a href="#p1">About</a></li>
+                            <li><a href="#p2">Chef</a></li>
+                            <li><a href="#p3">Chef</a></li>
+                            <li><a href="#p4">Menu</a></li>
+                            <li><a href="#p5">Event</a></li>
+                            <li><a href="#p6">Reservation</a></li>
+                            <li><a href="#p7">Contact</a></li>
+                            <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                <a class="ml-1" href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
+    </nav>
     <div id="fullpage">
         <!-- 全圖 -->
         <div class="section section-img" id="" data-anchor="p0">
@@ -124,6 +138,7 @@
 
     <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
     <script type="text/javascript" src="js/fullpage.min.js"></script>
+    <script type="text/javascript" src="font/all.min.js"></script>
     <script>
         $(document).ready(function () {
             new fullpage('#fullpage', {
@@ -145,7 +160,7 @@
             $("#goTop").click(function () {
                 fullpage_api.moveTo('p0', 1);
             });
-                        
+
         });
 
     </script>
